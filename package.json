@@ -1,0 +1,27 @@
+{
+  "name": "Hackaton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RonaldM-/Hackaton.git"
+  },
+  "author": "Chloé,Miguel,Ronald",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RonaldM-/Hackaton.git/issues"
+  },
+  "homepage": "https://github.com/RonaldM-/Hackaton.git#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-slim": "^0.1.0"
+  },
+  "dependencies": {
+  }
+}

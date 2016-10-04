@@ -1,0 +1,35 @@
+html,body,address{
+  padding: 0;
+  margin:0;
+}
+footer,section{
+  display: block;
+}
+footer{
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  height: auto;
+}
+.bidule p{
+  display: block;
+  float: left;
+  width: auto;
+}
+
+#social{
+  float: right;
+  li{
+    text-decoration: none;
+    display: inline-block;
+  }
+}
+.reseaux{
+  float: right;
+}
+a{
+  text-decoration: none;
+}
+.legacy::before{
+  content: ' 2016 Hackaton. All rights reserved.'
+}

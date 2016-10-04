@@ -1,0 +1,52 @@
+doctype html
+html
+  head
+    title Slim Examples
+    meta name="keywords" content="template language"
+    link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+
+    body
+    nav
+    section#presentation
+    section#description
+    section#agenda
+    section#inscription
+
+
+      h2 Formulaire
+
+        form action="add_action.php" method="post" 
+
+
+          label.control-label.col-sm-2
+
+          br 
+          label Nom:
+          input type="text" name="name" 
+          br 
+          label Prénom:
+          input type="text" name="prenom" 
+          br 
+          label Email:
+          input type="text" name="email" 
+          br 
+          label Numéro:
+          input type="text" name="phone" 
+          br 
+
+          select name="affilate_type" id="type_affilate"
+
+           option value="1" Privé
+           option value="0" Professionnel
+     
+          Nom du contact: input type="text" name="contact_name"
+
+    input type="submit" value="Envoyer"
+
+
+
+    section#partenaire
+    footer
+      .social_reseau
+
+    

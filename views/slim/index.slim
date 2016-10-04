@@ -3,7 +3,9 @@ html
   head
     title Slim Examples
     meta name="keywords" content="template language"
-  body
+    link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+
+    body
     nav
     section#presentation
     section#description
@@ -13,8 +15,10 @@ html
 
       h2 Formulaire
 
-      form action="add_action.php" method="post"
-        label
+     form action="add_action.php" method="post" 
+
+
+        label.control-label.col-sm-2
 
           br 
           label Nom:
@@ -24,7 +28,7 @@ html
           input type="text" name="prenom" 
           br 
           label Email:
-          input type="text" name="email"
+          input type="text" name="email" 
           br 
           label Numéro:
           input type="text" name="phone" 

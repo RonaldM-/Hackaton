@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slim Examples</title>
+    <meta content="template language" name="keywords" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <body></body>
+    <nav></nav>
+    <section id="presentation"></section>
+    <section id="description"></section>
+    <section id="agenda"></section>
+    <section id="inscription">
+      <h2>
+        Formulaire
+        
+        form action="add_action.php" method="post" 
+        
+        
+          label.control-label.col-sm-2
+        
+          br 
+          label Nom:
+          input type="text" name="name" 
+          br 
+          label Prénom:
+          input type="text" name="prenom" 
+          br 
+          label Email:
+          input type="text" name="email" 
+          br 
+          label Numéro:
+          input type="text" name="phone" 
+          br 
+        
+          select name="affilate_type" id="type_affilate"
+        
+           option value="1" Privé
+           option value="0" Professionnel
+        
+          Nom du contact: input type="text" name="contact_name"
+      </h2>
+    </section>
+    <input type="submit" value="Envoyer" />
+    <section id="partenaire"></section>
+    <footer>
+      <div class="social_reseau"></div>
+    </footer>
+  </head>
+</html>

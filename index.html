@@ -4,10 +4,7 @@
     <title>Hackathon - Code Académie</title>
     <meta charset="UTF-8" />
     <meta content="template language" name="keywords" />
-    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet" />
-    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
   </head>
   <body>
     <nav></nav>
@@ -60,7 +57,38 @@
         </div>
       </div>
     </section>
-    <section id="inscription"></section>
+    <section id="inscription">
+      <h2>
+        Formulaire
+        
+        form action="add_action.php" method="post"
+        
+        
+          label.control-label.col-sm-2
+        
+          br
+          label Nom:
+          input type="text" name="name"
+          br
+          label Prénom:
+          input type="text" name="prenom"
+          br
+          label Email:
+          input type="text" name="email"
+          br
+          label Numéro:
+          input type="text" name="phone"
+          br
+        
+          select name="affilate_type" id="type_affilate"
+        
+           option value="1" Privé
+           option value="0" Professionnel
+        
+          Nom du contact: input type="text" name="contact_name"
+      </h2>
+    </section>
+    <input type="submit" value="Envoyer" />
     <section id="partenaire"></section>
     <footer>
       <div class="social_reseau"></div>

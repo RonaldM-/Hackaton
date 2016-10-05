@@ -93,33 +93,26 @@
     <section id="inscription">
       <h2>
         Formulaire
-        
-        form action="add_action.php" method="post"
-        
-        
-          label.control-label.col-sm-2
-        
-          br
-          label Nom:
-          input type="text" name="name"
-          br
-          label Prénom:
-          input type="text" name="prenom"
-          br
-          label Email:
-          input type="text" name="email"
-          br
-          label Numéro:
-          input type="text" name="phone"
-          br
-        
-          select name="affilate_type" id="type_affilate"
-        
-           option value="1" Privé
-           option value="0" Professionnel
-        
-          Nom du contact: input type="text" name="contact_name"
       </h2>
+      <form action="add_action.php" method="post">
+        <label class="control-label col-sm-2"></label><br /><label>Nom:</label><input name="name" type="text" /><br /><label>Prénom:</label><input name="prenom" type="text" /><br /><label>Email:</label><input name="email" type="text" /><br /><label>Numéro:</label><input name="phone" type="text" /><br /><label>Profil:</label><select id="type_affilate" name="affilate_type">
+          <option value="1">
+            Développeur
+          </option>
+          <option value="2">
+            Designer
+          </option>
+          <option value="3">
+            Ingénieur
+          </option>
+          <option value="4">
+            Porteur d'idées
+          </option>
+          <option value="5">
+            Autre
+          </option>
+        </select>
+      </form>
     </section>
     <input type="submit" value="Envoyer" />
     <section id="partenaire">

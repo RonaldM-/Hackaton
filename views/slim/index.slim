@@ -55,9 +55,7 @@ html
 
       h2 Formulaire
 
-        form action="add_action.php" method="post"
-
-
+      form action="add_action.php" method="post"
           label.control-label.col-sm-2
 
           br
@@ -74,12 +72,13 @@ html
           input type="text" name="phone"
           br
 
+          label Profil:
           select name="affilate_type" id="type_affilate"
-
-           option value="1" Privé
-           option value="0" Professionnel
-
-          Nom du contact: input type="text" name="contact_name"
+           option value="1" Développeur
+           option value="2" Designer
+           option value="3" Ingénieur
+           option value="4" Porteur d'idées
+           option value="5" Autre
 
     input type="submit" value="Envoyer"
 

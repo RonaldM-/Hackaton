@@ -21,6 +21,12 @@ section {
   padding: 60px 40px;
 }
 
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .bidule p {
   display: block;
   float: left;

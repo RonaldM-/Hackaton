@@ -1,41 +1,84 @@
 doctype html
 html
   head
-    title Slim Examples
+    title Hackathon - Code Académie
+    meta charset="UTF-8"
     meta name="keywords" content="template language"
     link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-
-    body
+  body
     nav
     section#presentation
     section#description
+      .row
+          h2.description Description :
+          p Dans le cadre de la grande école numerique,
+            Face Rennes réalise un hackathon en partenariat
+            avec un grand groupe Industriel.
+
+            Avec une thématique forte, ainsi que des données issues d'un
+            grand groupe industriel, des développeurs ainsi que des personnes
+            issues du métier se rassemblent durant un laps de temps de 42
+            heures d'affilées afin d'esquisser des prototypes ou de tester
+            des idées.
+
     section#agenda
+      .container-fluid
+        .row
+          .col-md-12
+            h1 class="text-center" AGENDA
+        .row
+            .col-md-6
+              .agenda_am
+                h2 Matinée
+                ul
+                  li 09h00		Accueil
+                  li 10h00		Présentation du hackaton, des technos et des datasets
+                  li 11h00		Présentation technique
+                  li 12h00		Début du code
+
+                  li 12h30 à 13h30
+                
+                .event
+                .detail 
+                  
+            .col-md-6
+              .agenda_pm
+                h2 Après-Midi
+                ul
+                  li 13h30		Formation des équipes
+                  li 14h00		Travail en équipe
+                  li 15h30		Pitch des idées
+                  li 16h00		Questions et réponses
+                  li 18h30		Fin du code
     section#inscription
 
 
       h2 Formulaire
 
-          form action="add_action.php" method="post" 
+        form action="add_action.php" method="post"
+
+
           label.control-label.col-sm-2
-          br 
+
+          br
           label Nom:
-          input type="text" name="name" 
-          br 
+          input type="text" name="name"
+          br
           label Prénom:
-          input type="text" name="prenom" 
-          br 
+          input type="text" name="prenom"
+          br
           label Email:
-          input type="text" name="email" 
-          br 
+          input type="text" name="email"
+          br
           label Numéro:
-          input type="text" name="phone" 
-          br 
+          input type="text" name="phone"
+          br
 
           select name="affilate_type" id="type_affilate"
 
            option value="1" Privé
            option value="0" Professionnel
-     
+
           Nom du contact: input type="text" name="contact_name"
 
     input type="submit" value="Envoyer"
@@ -43,7 +86,7 @@ html
 
 
     section#partenaire
+      .row
+        h1 class="text-center" PARTENAIRES
     footer
       .social_reseau
-
-    

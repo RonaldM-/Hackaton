@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hackathon - Code Académie</title>
+    <meta charset="UTF-8" />
+    <meta content="template language" name="keywords" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="build/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="build/css/style.css" rel="stylesheet" />
+    <script src="build/js/jquery-3.1.1.min.js"></script>
+    <script src="build/js/app.js"></script>
+    <nav></nav>
+    <section id="presentation"></section>
+    <section id="description">
+      <div class="row">
+        <h2 class="description">
+          Description :
+        </h2>
+        <p>
+          Dans le cadre de la grande école numerique,
+          Face Rennes réalise un hackathon en partenariat
+          avec un grand groupe Industriel.
+          
+          Avec une thématique forte, ainsi que des données issues d'un
+          grand groupe industriel, des développeurs ainsi que des personnes
+          issues du métier se rassemblent durant un laps de temps de 42
+          heures d'affilées afin d'esquisser des prototypes ou de tester
+          des idées.
+        </p>
+      </div>
+    </section>
+    <div class="parallax-container" data-bleed="10" data-image-src="http://pixelcog.github.io/parallax.js/img/stellar-spire-eagle-nebula-1400x900.jpg" data-natural-height="900" data-natural-width="1400" data-parallax="scroll" data-position="top"></div>
+    <section id="agenda">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">
+              AGENDA
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="agenda_am">
+              <h2>
+                Matinée
+              </h2>
+              <ul>
+                <li>
+                  09h00		Accueil
+                </li>
+                <li>
+                  10h00		Présentation du hackaton, des technos et des datasets
+                </li>
+                <li>
+                  11h00		Présentation technique
+                </li>
+                <li>
+                  12h00		Début du code
+                </li>
+                <li>
+                  12h30 à 13h30
+                </li>
+              </ul>
+              <div class="event"></div>
+              <div class="detail"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="agenda_pm">
+              <h2>
+                Après-Midi
+              </h2>
+              <ul>
+                <li>
+                  13h30		Formation des équipes
+                </li>
+                <li>
+                  14h00		Travail en équipe
+                </li>
+                <li>
+                  15h30		Pitch des idées
+                </li>
+                <li>
+                  16h00		Questions et réponses
+                </li>
+                <li>
+                  18h30		Fin du code
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="parallax-container" data-bleed="10" data-image-src="http://pixelcog.github.io/parallax.js/img/stellar-spire-eagle-nebula-1400x900.jpg" data-natural-height="900" data-natural-width="1400" data-parallax="scroll" data-position="top"></div>
+    <section id="inscription">
+      <h2>
+        Formulaire
+      </h2>
+      <form action="add_action.php" method="post">
+        <label class="control-label col-sm-2"></label><br /><label>Nom:</label><input name="name" type="text" /><br /><label>Prénom:</label><input name="prenom" type="text" /><br /><label>Email:</label><input name="email" type="text" /><br /><label>Numéro:</label><input name="phone" type="text" /><br /><label>Profil:</label><select id="type_affilate" name="affilate_type">
+          <option value="1">
+            Développeur
+          </option>
+          <option value="2">
+            Designer
+          </option>
+          <option value="3">
+            Ingénieur
+          </option>
+          <option value="4">
+            Porteur d'idées
+          </option>
+          <option value="5">
+            Autre
+          </option>
+        </select>
+      </form>
+    </section>
+    <input type="submit" value="Envoyer" />
+    <div class="parallax-container" data-bleed="10" data-image-src="http://pixelcog.github.io/parallax.js/img/stellar-spire-eagle-nebula-1400x900.jpg" data-natural-height="900" data-natural-width="1400" data-parallax="scroll" data-position="top"></div>
+    <section id="partenaire">
+      <div class="row">
+        <h1 class="text-center">
+          PARTENAIRES
+        </h1>
+      </div>
+    </section>
+    <div class="coordonnee container-fluid">
+      <address class="col-md-4 col-md-offset-2">
+        <p>
+          Si vous relevez quelques bogues que ce soient, merci de contacter. Vous pouvez aussi venir nous voir dans nos locaux : <span><br />Code Academie <br />23 Rue des aiguillons <br />35000 Rennes </span>
+        </p>
+      </address>
+      <div class="col-md-4" id="map">
+        <iframe frameborder="0" height="250" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10659.73726278632!2d-1.6899073456317324!3d48.09220968867692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480edfc463474483%3A0x59e67b37bf053fc8!2sFace+Rennes!5e0!3m2!1sfr!2sfr!4v1475581752891" style="border:0" width="400">allowfullscreen</iframe>
+      </div>
+    </div>
+    <footer class="container-fluid">
+      <div class="block_footer col-md-12">
+        <div id="copyright">
+          <div class="bidule">
+            <p>
+              © 2016 DevNetwork. All rights reserved. | Terms of Use a href |  <a href="#">Privacy Policy </a>|  <a href="#">Terms of Use           </a>
+            </p>
+          </div>
+          <div id="social">
+            <ul>
+              <li>
+                <a href="#"><i class="fa fa-twitter fa-3x"><span class="name">Twitter</span></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-facebook fa-3x"><span class="name">Facebook</span></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </head>
+</html>

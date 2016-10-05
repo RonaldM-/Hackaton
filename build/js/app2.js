@@ -106,13 +106,13 @@ var ctx = canvas.getContext('2d');
 W = canvas.width = window.innerWidth;
 H = canvas.height = window.innerHeight;
 
-gridX = 5;
+gridX = 4;
 gridY = 5;
 
 function shape(x, y, texte) {
   this.x = x;
   this.y = y;
-  this.size = 120;
+  this.size = 80;
 
   this.text = texte;
   this.placement = [];
@@ -126,7 +126,7 @@ shape.prototype.getValue = function() {
   // Draw the shape :^)
 
   ctx.textAlign = "center";
-  ctx.font = "bold " + this.size + "px arial";
+  ctx.font = "normal " + this.size + "px arial";
   ctx.fillText(this.text, this.x, this.y);
 
 
@@ -248,13 +248,13 @@ element4 = document.getElementById("4");
 element5 = document.getElementById("5");
 element6 = document.getElementById("6");
 
-fieldvalue = "message";
+fieldvalue = document.getElementById("message");
 gravity = 0;
 duration = .4;
-resolution = 5;
+resolution = 9;
 speed = 0.1;
-radius = 2;
-
+radius = 0.2;
+console.log(fieldvalue);
 var message = new shape(W / 2, H / 2 + 50, fieldvalue.value);
 
 message.getValue();
@@ -270,6 +270,7 @@ function change() {
   message.text = fieldvalue.value;
   message.getValue();
 }
+
 
 
 function changeV() {

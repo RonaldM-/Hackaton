@@ -21,8 +21,11 @@ footer,section{
 section{
   padding: 60px 40px;
 }
+input#message{
+  visibility: hidden;
+}
 canvas{
-  position:absolute;
+  // position: absolute;
   left:0;
   top:0;
 }

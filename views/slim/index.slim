@@ -9,12 +9,14 @@ html
     link rel="stylesheet" href="build/css/style.css"
     script src="build/js/jquery-3.1.1.min.js"
     script src="build/js/app.js"
-    script src="build/js/parallax.js"
+
+    / script src="build/js/parallax.js"
 
     nav
-    section#presentation
-    canvas#canvaid
-    section#description
+    section#presentation.container-fluid
+      input id="message" type="text" value="Hackaton Code academie" onchange="change()"
+      canvas#canvaid
+    section#description.container-fluid
       .row
           h2.description Description :
           p Dans le cadre de la grande école numerique,
@@ -26,8 +28,8 @@ html
             issues du métier se rassemblent durant un laps de temps de 42
             heures d'affilées afin d'esquisser des prototypes ou de tester
             des idées.
-    .parallax-container data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="build/images/hackathon5.jpg" data-natural-width="1400" data-natural-height="900"
-    section#agenda
+    .parallax-container data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="http://pixelcog.github.io/parallax.js/img/stellar-spire-eagle-nebula-1400x900.jpg" data-natural-width="1400" data-natural-height="900"
+    section#agenda.container-fluid
       .container-fluid
         .row
           .col-md-12
@@ -57,12 +59,14 @@ html
                   li 16h00		Questions et réponses
                   li 18h30		Fin du code
     .parallax-container data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="http://pixelcog.github.io/parallax.js/img/stellar-spire-eagle-nebula-1400x900.jpg" data-natural-width="1400" data-natural-height="900"
-    section#inscription
+    section#inscription.container-fluid
 
 
       h2 Formulaire
 
       form action="add_action.php" method="post"
+
+
           label.control-label.col-sm-2
 
           br
@@ -79,13 +83,12 @@ html
           input type="text" name="phone"
           br
 
-          label Profil:
           select name="affilate_type" id="type_affilate"
-           option value="1" Développeur
-           option value="2" Designer
-           option value="3" Ingénieur
-           option value="4" Porteur d'idées
-           option value="5" Autre
+
+           option value="1" Privé
+           option value="0" Professionnel
+
+          Nom du contact: input type="text" name="contact_name"
 
     input type="submit" value="Envoyer"
 

@@ -13,31 +13,28 @@
       <h2>
         Formulaire
         
-        form action="add_action.php" method="post" 
+         form action="add_action.php" method="post" 
+         label.control-label.col-sm-2
+         br 
+         label Nom:
+         input type="text" name="name" 
+         br 
+         label Prénom:
+         input type="text" name="prenom" 
+         br 
+         label Email:
+         input type="text" name="email" 
+         br 
+         label Numéro:
+         input type="text" name="phone" 
+         br 
         
+         select name="affilate_type" id="type_affilate"
         
-          label.control-label.col-sm-2
+          option value="1" Privé
+          option value="0" Professionnel
         
-          br 
-          label Nom:
-          input type="text" name="name" 
-          br 
-          label Prénom:
-          input type="text" name="prenom" 
-          br 
-          label Email:
-          input type="text" name="email" 
-          br 
-          label Numéro:
-          input type="text" name="phone" 
-          br 
-        
-          select name="affilate_type" id="type_affilate"
-        
-           option value="1" Privé
-           option value="0" Professionnel
-        
-          Nom du contact: input type="text" name="contact_name"
+         Nom du contact: input type="text" name="contact_name"
       </h2>
     </section>
     <input type="submit" value="Envoyer" />

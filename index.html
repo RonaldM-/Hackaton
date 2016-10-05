@@ -9,6 +9,7 @@
     <link href="build/css/style.css" rel="stylesheet" />
     <script src="build/js/jquery-3.1.1.min.js"></script>
     <script src="build/js/app.js"></script>
+    <script src="build/js/parallax.js"></script>
     <nav></nav>
     <section id="presentation"></section>
     <canvas id="canvaid"></canvas>
@@ -30,7 +31,7 @@
         </p>
       </div>
     </section>
-    <div class="parallax-container" data-bleed="10" data-image-src="http://pixelcog.github.io/parallax.js/img/stellar-spire-eagle-nebula-1400x900.jpg" data-natural-height="900" data-natural-width="1400" data-parallax="scroll" data-position="top"></div>
+    <div class="parallax-container" data-bleed="10" data-image-src="build/images/hackathon5.jpg" data-natural-height="900" data-natural-width="1400" data-parallax="scroll" data-position="top"></div>
     <section id="agenda">
       <div class="container-fluid">
         <div class="row">
@@ -100,14 +101,23 @@
         Formulaire
       </h2>
       <form action="add_action.php" method="post">
-        <label class="control-label col-sm-2"></label><br /><label>Nom:</label><input name="name" type="text" /><br /><label>Prénom:</label><input name="prenom" type="text" /><br /><label>Email:</label><input name="email" type="text" /><br /><label>Numéro:</label><input name="phone" type="text" /><br /><select id="type_affilate" name="affilate_type">
+        <label class="control-label col-sm-2"></label><br /><label>Nom:</label><input name="name" type="text" /><br /><label>Prénom:</label><input name="prenom" type="text" /><br /><label>Email:</label><input name="email" type="text" /><br /><label>Numéro:</label><input name="phone" type="text" /><br /><label>Profil:</label><select id="type_affilate" name="affilate_type">
           <option value="1">
-            Privé
+            Développeur
           </option>
-          <option value="0">
-            Professionnel
+          <option value="2">
+            Designer
           </option>
-        </select><Nom>du contact: input type="text" name="contact_name"</Nom>
+          <option value="3">
+            Ingénieur
+          </option>
+          <option value="4">
+            Porteur d'idées
+          </option>
+          <option value="5">
+            Autre
+          </option>
+        </select>
       </form>
     </section>
     <input type="submit" value="Envoyer" />

@@ -30,7 +30,7 @@ section {
 .parallax-container {
   height: 400px;
   width: 100%;
-  background: blue;
+  background: transparent;
   opacity: 0.75;
 }
 

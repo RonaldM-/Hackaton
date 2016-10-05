@@ -17,10 +17,21 @@ footer, section {
   color: white;
   height: auto;
 } */
+section {
+  padding: 60px 40px;
+}
+
 .bidule p {
   display: block;
   float: left;
   width: auto;
+}
+
+.parallax-container {
+  height: 400px;
+  width: 100%;
+  background: blue;
+  opacity: 0.75;
 }
 
 #social {

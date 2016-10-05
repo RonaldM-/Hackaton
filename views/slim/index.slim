@@ -5,7 +5,12 @@ html
     meta charset="UTF-8"
     meta name="keywords" content="template language"
     link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-  body
+    link rel="stylesheet" href="build/css/font-awesome.min.css"
+    link rel="stylesheet" href="build/css/style.css"
+    script src="build/js/jquery-3.1.1.min.js"
+    script src="build/js/app.js"
+    / script src="build/js/parallax.js"
+
     nav
     section#presentation
     section#description
@@ -20,7 +25,7 @@ html
             issues du métier se rassemblent durant un laps de temps de 42
             heures d'affilées afin d'esquisser des prototypes ou de tester
             des idées.
-
+    .parallax-container data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="http://pixelcog.github.io/parallax.js/img/stellar-spire-eagle-nebula-1400x900.jpg" data-natural-width="1400" data-natural-height="900"
     section#agenda
       .container-fluid
         .row
@@ -50,6 +55,7 @@ html
                   li 15h30		Pitch des idées
                   li 16h00		Questions et réponses
                   li 18h30		Fin du code
+    .parallax-container data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="http://pixelcog.github.io/parallax.js/img/stellar-spire-eagle-nebula-1400x900.jpg" data-natural-width="1400" data-natural-height="900"
     section#inscription
 
 
@@ -83,9 +89,42 @@ html
     input type="submit" value="Envoyer"
 
 
-
+    .parallax-container data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="http://pixelcog.github.io/parallax.js/img/stellar-spire-eagle-nebula-1400x900.jpg" data-natural-width="1400" data-natural-height="900"
     section#partenaire
       .row
         h1 class="text-center" PARTENAIRES
-    footer
-      .social_reseau
+    .coordonnee.container-fluid
+      address.col-md-4.col-md-offset-2
+        p
+          '
+          'Si vous relevez quelques bogues que ce soient, merci de contacter.
+          'Vous pouvez aussi venir nous voir dans nos locaux :
+          span
+            br
+            'Code Academie
+            br
+            '23 Rue des aiguillons
+            br
+            '35000 Rennes
+      #map.col-md-4
+        iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10659.73726278632!2d-1.6899073456317324!3d48.09220968867692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480edfc463474483%3A0x59e67b37bf053fc8!2sFace+Rennes!5e0!3m2!1sfr!2sfr!4v1475581752891" width="400" height="250" frameborder="0" style="border:0" allowfullscreen
+    footer.container-fluid  
+      .block_footer.col-md-12
+        #copyright
+            .bidule
+              p
+                '© 2016 DevNetwork. All rights reserved. | Terms of Use a href
+                ' | 
+                a href="#"Privacy Policy 
+                ' | 
+                a href="#"Terms of Use           
+            #social
+              ul
+                li
+                  a href="#"
+                    i.fa.fa-twitter.fa-3x
+                      span.name Twitter
+                li
+                  a href="#"
+                    i.fa.fa-facebook.fa-3x
+                      span.name Facebook

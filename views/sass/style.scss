@@ -1,0 +1,77 @@
+@font-face {
+    font-family: fontAwesome;
+    src: url(build/fonts/FontAwesome.otf);
+}
+$sec:#DF730B;
+
+
+html,body,address{
+  padding: 0;
+  margin:0;
+}
+footer,section{
+  display: block;
+}
+/* footer{
+  background: #373737;
+  margin-top: 10px;
+  color: white;
+  height: auto;
+} */
+section{
+  padding: 60px 40px;
+}
+.bidule p{
+  display: block;
+  float: left;
+  width: auto;
+}
+.parallax-container {
+  height: 400px;
+  width: 100%;
+  background: blue;
+  opacity: 0.75;
+}
+#social{
+  float: right;
+  li{
+    text-decoration: none;
+    display: inline-block;
+    i{
+      font-family: "fontAwesome";
+      font-size: 20px;
+      .name{
+        padding-left:5px;
+        padding-right: 10px;
+        font-size: 14px;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+      }
+    }
+  }
+}
+.reseaux{
+  float: right;
+}
+.inscription{
+  background: sec;
+}
+a{
+  text-decoration: none;
+}
+.coordonnee{
+  background: #28282B;
+  color:#999;
+  padding: 40px 20px;
+  p{
+    padding: 20px;
+    background-color: rgba(0,0,0,0.1);
+  }
+}
+footer{
+  background-color: #111;
+  color: #959595;
+  padding: 40px 0 60px;
+  a{
+    color: #76daff;
+  }
+}

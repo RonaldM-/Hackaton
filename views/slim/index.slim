@@ -8,9 +8,8 @@ html
     link rel="stylesheet" href="build/css/font-awesome.min.css"
     link rel="stylesheet" href="build/css/style.css"
     script src="build/js/jquery-3.1.1.min.js"
-    script src="build/js/app.js"
-
-    / script src="build/js/parallax.js"
+    script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
+    
 
     nav
     section#presentation.container-fluid
@@ -18,6 +17,7 @@ html
       canvas#canvaid
     section#description.container-fluid
       .row
+        desc.col-md-6.col-md-offset-3
           h2.description Description :
           p Dans le cadre de la grande école numerique,
             Face Rennes réalise un hackathon en partenariat
@@ -28,37 +28,61 @@ html
             issues du métier se rassemblent durant un laps de temps de 42
             heures d'affilées afin d'esquisser des prototypes ou de tester
             des idées.
-    .parallax-container data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="http://pixelcog.github.io/parallax.js/img/stellar-spire-eagle-nebula-1400x900.jpg" data-natural-width="1400" data-natural-height="900"
+    .parallax-container data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="build/images/hack1.jpg" data-natural-width="1400" data-natural-height="900"
     section#agenda.container-fluid
       .container-fluid
-        .row
-          .col-md-12
-            h1 class="text-center" AGENDA
-        .row
-            .col-md-6
-              .agenda_am
-                h2 Matinée
-                ul
-                  li 09h00		Accueil
-                  li 10h00		Présentation du hackaton, des technos et des datasets
-                  li 11h00		Présentation technique
-                  li 12h00		Début du code
-
-                  li 12h30 à 13h30
-                
-                .event
-                .detail 
-                  
-            .col-md-6
-              .agenda_pm
-                h2 Après-Midi
-                ul
-                  li 13h30		Formation des équipes
-                  li 14h00		Travail en équipe
-                  li 15h30		Pitch des idées
-                  li 16h00		Questions et réponses
-                  li 18h30		Fin du code
-    .parallax-container data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="http://pixelcog.github.io/parallax.js/img/stellar-spire-eagle-nebula-1400x900.jpg" data-natural-width="1400" data-natural-height="900"
+        .agend.col-md-8.col-md-offset-2
+          .row
+              h1 class="text-center" AGENDA
+          .row
+              .col-md-6
+                .agenda_am
+                  h2 Matinée
+                  ul
+                    li
+                      '09h00
+                      span.detail 
+                          'Accueil
+                    li 
+                      '10h00
+                      span.detail
+                          'Présentation du hackaton
+                          / br
+                          / 'des technos et des datasets
+                    li
+                      '11h00
+                      span.detail
+                          'Présentation technique
+                    li
+                      '12h00
+                      span.detail
+                          'Début du code
+                    
+              .col-md-6
+                .agenda_pm
+                  h2 Après-Midi
+                  ul
+                    li
+                      '13h30
+                      span.detail
+                          'Formation des équipes
+                    li
+                      '14h00
+                      span.detail
+                          'Travail en équipe
+                    li
+                      '15h30
+                      span.detail
+                          'Pitch des idées
+                    li
+                      '16h00
+                      span.detail
+                          'Questions et réponses
+                    li
+                      '18h30
+                      span.detail
+                          'Fin du code
+    .parallax-container data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="build/images/hack.jpg" data-natural-width="1400" data-natural-height="900"
     section#inscription.container-fluid
 
 
@@ -93,7 +117,7 @@ html
     input type="submit" value="Envoyer"
 
 
-    .parallax-container data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="http://pixelcog.github.io/parallax.js/img/stellar-spire-eagle-nebula-1400x900.jpg" data-natural-width="1400" data-natural-height="900"
+    .parallax-container data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="build/images/hack2.jpg" data-natural-width="1651" data-natural-height="599"
     section#partenaire
       .row
         h1 class="text-center" PARTENAIRES
@@ -133,3 +157,5 @@ html
                     i.fa.fa-facebook.fa-3x
                       span.name Facebook
     script src="build/js/app2.js"
+    script src="build/js/app.js"
+    script src="build/js/parallax.js"

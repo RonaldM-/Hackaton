@@ -7,6 +7,25 @@ html, body, address {
   margin: 0;
 }
 
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+}
+
+#agenda h2 {
+  text-align: center;
+}
+#agenda span.detail {
+  margin-left: 25px;
+  color: blue;
+  opacity: 0.75;
+}
+
 footer, section {
   display: block;
 }
@@ -18,7 +37,25 @@ footer, section {
   height: auto;
 } */
 section {
-  padding: 60px 40px;
+  display: block;
+}
+
+#description {
+  padding: 100px 40px;
+  background-color: #F5F5F5;
+}
+
+#agenda {
+  padding: 80px 40px;
+  background-color: #F1F8E9;
+}
+
+#inscription {
+  padding: 100px 40px;
+}
+
+#presentation {
+  padding: 100px 40px;
 }
 
 input#message {
@@ -40,7 +77,6 @@ canvas {
   height: 400px;
   width: 100%;
   background: transparent;
-  opacity: 0.75;
 }
 
 #social {

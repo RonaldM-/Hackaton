@@ -8,94 +8,91 @@
     <link href="build/css/font-awesome.min.css" rel="stylesheet" />
     <link href="build/css/style.css" rel="stylesheet" />
     <script src="build/js/jquery-3.1.1.min.js"></script>
-    <script src="build/js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <nav></nav>
     <section class="container-fluid" id="presentation">
       <input id="message" onchange="change()" type="text" value="Hackaton Code academie" /><canvas id="canvaid"></canvas>
     </section>
     <section class="container-fluid" id="description">
       <div class="row">
-        <h2 class="description">
-          Description :
-        </h2>
-        <p>
-          Dans le cadre de la grande école numerique,
-          Face Rennes réalise un hackathon en partenariat
-          avec un grand groupe Industriel.
-          
-          Avec une thématique forte, ainsi que des données issues d'un
-          grand groupe industriel, des développeurs ainsi que des personnes
-          issues du métier se rassemblent durant un laps de temps de 42
-          heures d'affilées afin d'esquisser des prototypes ou de tester
-          des idées.
-        </p>
+        <desc class="col-md-6 col-md-offset-3">
+          <h2 class="description">
+            Description :
+          </h2>
+          <p>
+            Dans le cadre de la grande école numerique,
+            Face Rennes réalise un hackathon en partenariat
+            avec un grand groupe Industriel.
+            
+            Avec une thématique forte, ainsi que des données issues d'un
+            grand groupe industriel, des développeurs ainsi que des personnes
+            issues du métier se rassemblent durant un laps de temps de 42
+            heures d'affilées afin d'esquisser des prototypes ou de tester
+            des idées.
+          </p>
+        </desc>
       </div>
     </section>
-    <div class="parallax-container" data-bleed="10" data-image-src="http://pixelcog.github.io/parallax.js/img/stellar-spire-eagle-nebula-1400x900.jpg" data-natural-height="900" data-natural-width="1400" data-parallax="scroll" data-position="top"></div>
+    <div class="parallax-container" data-bleed="10" data-image-src="build/images/hack1.jpg" data-natural-height="900" data-natural-width="1400" data-parallax="scroll" data-position="top"></div>
     <section class="container-fluid" id="agenda">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12">
+        <div class="agend col-md-8 col-md-offset-2">
+          <div class="row">
             <h1 class="text-center">
               AGENDA
             </h1>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="agenda_am">
-              <h2>
-                Matinée
-              </h2>
-              <ul>
-                <li>
-                  09h00		Accueil
-                </li>
-                <li>
-                  10h00		Présentation du hackaton, des technos et des datasets
-                </li>
-                <li>
-                  11h00		Présentation technique
-                </li>
-                <li>
-                  12h00		Début du code
-                </li>
-                <li>
-                  12h30 à 13h30
-                </li>
-              </ul>
-              <div class="event"></div>
-              <div class="detail"></div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="agenda_am">
+                <h2>
+                  Matinée
+                </h2>
+                <ul>
+                  <li>
+                    09h00 <span class="detail">Accueil </span>
+                  </li>
+                  <li>
+                    10h00 <span class="detail">Présentation du hackaton </span>
+                  </li>
+                  <li>
+                    11h00 <span class="detail">Présentation technique </span>
+                  </li>
+                  <li>
+                    12h00 <span class="detail">Début du code </span>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="agenda_pm">
-              <h2>
-                Après-Midi
-              </h2>
-              <ul>
-                <li>
-                  13h30		Formation des équipes
-                </li>
-                <li>
-                  14h00		Travail en équipe
-                </li>
-                <li>
-                  15h30		Pitch des idées
-                </li>
-                <li>
-                  16h00		Questions et réponses
-                </li>
-                <li>
-                  18h30		Fin du code
-                </li>
-              </ul>
+            <div class="col-md-6">
+              <div class="agenda_pm">
+                <h2>
+                  Après-Midi
+                </h2>
+                <ul>
+                  <li>
+                    13h30 <span class="detail">Formation des équipes </span>
+                  </li>
+                  <li>
+                    14h00 <span class="detail">Travail en équipe </span>
+                  </li>
+                  <li>
+                    15h30 <span class="detail">Pitch des idées </span>
+                  </li>
+                  <li>
+                    16h00 <span class="detail">Questions et réponses </span>
+                  </li>
+                  <li>
+                    18h30 <span class="detail">Fin du code </span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <div class="parallax-container" data-bleed="10" data-image-src="http://pixelcog.github.io/parallax.js/img/stellar-spire-eagle-nebula-1400x900.jpg" data-natural-height="900" data-natural-width="1400" data-parallax="scroll" data-position="top"></div>
+    <div class="parallax-container" data-bleed="10" data-image-src="build/images/hack.jpg" data-natural-height="900" data-natural-width="1400" data-parallax="scroll" data-position="top"></div>
     <section class="container-fluid" id="inscription">
       <h2>
         Formulaire
@@ -112,7 +109,7 @@
       </form>
     </section>
     <input type="submit" value="Envoyer" />
-    <div class="parallax-container" data-bleed="10" data-image-src="http://pixelcog.github.io/parallax.js/img/stellar-spire-eagle-nebula-1400x900.jpg" data-natural-height="900" data-natural-width="1400" data-parallax="scroll" data-position="top"></div>
+    <div class="parallax-container" data-bleed="10" data-image-src="build/images/hack2.jpg" data-natural-height="599" data-natural-width="1651" data-parallax="scroll" data-position="top"></div>
     <section id="partenaire">
       <div class="row">
         <h1 class="text-center">
@@ -152,5 +149,7 @@
       </div>
     </footer>
     <script src="build/js/app2.js"></script>
+    <script src="build/js/app.js"></script>
+    <script src="build/js/parallax.js"></script>
   </head>
 </html>
